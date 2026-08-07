@@ -42,7 +42,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        {/* mobile navbar */}
+         {/* mobile navbar */}
         {menu && (
             <ul className="sm:hidden flex flex-col h-screen space-y-4 text-2xl font-semibold items-center  justify-center text-pink-800">
                { navLinks.map(({id, text}) => (
