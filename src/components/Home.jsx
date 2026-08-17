@@ -3,8 +3,8 @@ import { ReactTyped } from "react-typed";
 import img from "../assets/image.jpeg";
 
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaSquareFacebook } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -16,7 +16,7 @@ const Home = () => {
       <div className="container  max-w-screen-2xl  mx-auto px-4 md:px-10 my-30 ">
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
-            <span className="text-xl">Welcome to my portfolio</span>
+            <span className="text-xl ">Welcome to my portfolio</span>
             <div className="flex gap-1 text-2xl md:text-4xl">
               <h1>Hi, I'm a</h1>
               <ReactTyped
@@ -28,7 +28,7 @@ const Home = () => {
               />
             </div>
             <br />
-            <p className="text-sm md:text-md text-jusyify">
+            <p className="text-sm md:text-md text-justify">
               I'm Mahima, A Computer Science student and aspiring MERN Stack
               Developer. I enjoy building responsive web applications using
               React, Tailwind CSS, Node.js, Express.js, and MongoDB. I'm
@@ -43,13 +43,27 @@ const Home = () => {
                 <h1 className="font-bold">Available on</h1>
                 <ul className="flex gap-2">
                   <li className="text-2xl md:text-3xl cursor-pointer hover:scale-110 duration-200">
-                    <FaLinkedin />
+                    <a
+                      href="https://www.linkedin.com/in/mahima-singh-b16053291" aria-label="Visit Mahima's Linkedin profile"
+                      target="_blank" rel="noopener noreferrer"
+                    >
+                    <FaLinkedin /></a>
                   </li>
                   <li className="text-2xl md:text-3xl cursor-pointer hover:scale-110 duration-200">
-                    <FaInstagram />
+                    <a
+                      href="https://github.com/mahima14356-max"
+                      target="_blank"
+                      rel="noopener noreferrer"  aria-label="Visit Mahima's GitHub profile"
+                    >
+                    <FaGithub /></a>
                   </li>
                   <li className="text-2xl  md:text-3xl cursor-pointer hover:scale-110 duration-200">
-                    <FaSquareFacebook />
+                    <a
+                      href="https://leetcode.com"
+                      target="_blank" aria-label="Visit Mahima's LeetCode profile"
+                      rel="noopener noreferrer"
+                    >
+                    <SiLeetcode /></a>
                   </li>
                 </ul>
               </div>
@@ -70,11 +84,11 @@ const Home = () => {
             <img
               src={img}
               alt="picture"
-              className=" w-35  h-35 md:h-60 md:w-60 rounded-full border-3 border-pink-900"
+              className=" w-35  h-35 md:h-60 md:w-60 rounded-full border-3 border-pink-800"
             />
           </div>
         </div>
-      </div>{" "}
+      </div>
       <hr />
     </>
   );
